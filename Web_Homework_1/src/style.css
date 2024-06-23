@@ -1,0 +1,45 @@
+.large {
+    color:white;
+    background-color: blue;
+    font-size: xx-large;
+    font-family: Verdana;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #eecffe;
+    border: solid 1px #ceaefa;
+  }
+
+#panel {
+    padding: 50px;
+    display: none;
+  }
+
+/* .block {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+} */
+
+/* #block1 {
+    background-color: red;
+}
+
+#block2 {
+    background-color: blue;
+} */
+
+#colorBox {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 200px;
+    font-size: 1.5em;
+}
+
+ 

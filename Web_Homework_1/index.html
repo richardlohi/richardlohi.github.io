@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Mission 1</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("p").click(function(){
+            //     $(this).hide();
+            // });
+            
+            // 特效 1
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            });
+
+            // 特效 2
+            $("#bt_toggle").click(function(){
+                $(".p_toggle").toggle();
+            });
+
+            // 特效 3
+            $("#hide").click(function(){
+                $(".img_hs").hide();
+            });
+            
+            $("#show").click(function(){
+                $(".img_hs").show();
+            });
+
+            // 特效 4          
+            $("#colorBox").mouseenter(function(){
+                $(this).css("background-color", "#fe46a5");
+            });
+            
+            $("#colorBox").mouseleave(function(){
+                $(this).css("background-color", "#056eee");
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <h1>Web Homework Mission 1</h1>
+    <p>這個 Mission 1 作業會使用下面 6 個 jQuery 方法來實作 4 種不同特效，並於下方分別說明</p>
+    
+    <ul>
+        <li>slideToggle()</li>
+        <li>toggle()</li>
+        <li>hide()</li>
+        <li>show()</li>
+        <li>mouseenter()</li>
+        <li>mouseleave()</li>
+    </ul>
+    
+    <h2>特效 1</h2>
+    <p>使用 slideToggle() 方法來控制向上、向下滑動</p>    
+    <div id="flip">按一下此處可向下或向上滑動面板</div>
+    <div id="panel">Hello jQuerry Effects!</div>    
+    
+    <h2>特效 2</h2>
+    <p>使用 toggle() 方法來控制隱藏和顯示區塊</p>    
+    <button id="bt_toggle">按一下此處，可將下面<font color="blue">藍色字段落</font>在「隱藏」和「顯示」之間做切換</button>
+    <p class="p_toggle"><font color="blue">This is a paragraph with little content.</font></p>
+    <p class="p_toggle"><font color="blue">This is another small paragraph.</font></p>    
+    
+    <h2>特效 3</h2>        
+    <p>使用 hide() 和 show() 兩種方法來隱藏和顯示 HTML 元素，以下面圖像為例，對<img>元素進行控制</p>
+    <p>如果你點擊「隱藏」按鈕，圖像就會消失，如果你點擊「顯示」按鈕，圖像就會顯示。</p>    
+    <button id="hide">隱藏</button>
+    <button id="show">顯示</button>    
+    <h3>An Pokémon image with link</h3>
+    <!-- <img class="img_hs" src="PP_art.png"> -->
+    <a id="img" href="https://github.com/gorisanson/pikachu-volleyball">
+        <img class="img_hs" src="https://upload.wikimedia.org/wikipedia/en/a/a6/Pok%C3%A9mon_Pikachu_art.png">
+    </a>
+
+    <h2>特效 4</h2>
+    <p>使用 mouseenter() 和 mouseleave() 兩種方法，來展示當滑鼠指標進入及離開 HTML 設定元素時可以變換不同顏色</p> 
+    <div id="colorBox">Hover Me!</div>
+
+</body>
+</html>
